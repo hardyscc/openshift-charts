@@ -26,6 +26,6 @@ You might know gitlab has a raw view. So simply use the following:
 $ helm repo add openshift 'http://gitlab.apps.sysforce.com/tommy/charts/raw/master'
 $ helm repo update
 $ helm search nodejs
-NAME                    	CHART VERSION	APP VERSION	DESCRIPTION
-openshift/nodejs
+NAME                    CHART VERSION   APP VERSION     DESCRIPTION
+openshift/nodejs        0.1                             An example Node.js application with no database. For more...
 ```
