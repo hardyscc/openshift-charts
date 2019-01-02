@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  nodejs:
+  - created: 2019-01-02T11:38:16.692474+08:00
+    description: An example Node.js application with no database. For more information
+      about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.
+    digest: 34e08db336b2f649a2761052fb58942eb159216545f271693603035003de4d53
+    home: https://access.redhat.com
+    keywords:
+    - quickstart
+    - nodejs
+    name: nodejs
+    sources:
+    - https://github.com/openshift/nodejs-ex
+    urls:
+    - nodejs-0.1.tgz
+    version: "0.1"
+generated: 2019-01-02T11:38:16.691038+08:00
