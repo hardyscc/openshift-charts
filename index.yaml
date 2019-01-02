@@ -1,7 +1,17 @@
 apiVersion: v1
 entries:
+  auto-deploy-app:
+  - apiVersion: v1
+    created: 2019-01-02T16:30:32.655456+08:00
+    description: GitLab's Auto-deploy Helm Chart (OpenShift)
+    digest: 474539b69e53c96a50184c69ee5cce3a93c7dcb629935771fc2bc02eba11e192
+    icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
+    name: auto-deploy-app
+    urls:
+    - auto-deploy-app-0.0.1.tgz
+    version: 0.0.1
   nodejs:
-  - created: 2019-01-02T11:38:16.692474+08:00
+  - created: 2019-01-02T16:30:32.656231+08:00
     description: An example Node.js application with no database. For more information
       about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.
     digest: 34e08db336b2f649a2761052fb58942eb159216545f271693603035003de4d53
@@ -15,4 +25,4 @@ entries:
     urls:
     - nodejs-0.1.tgz
     version: "0.1"
-generated: 2019-01-02T11:38:16.691038+08:00
+generated: 2019-01-02T16:30:32.654396+08:00

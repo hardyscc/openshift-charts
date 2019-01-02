@@ -25,7 +25,7 @@ You might know gitlab has a raw view. So simply use the following:
 ```bash
 $ helm repo add openshift 'http://gitlab.apps.sysforce.com/tommy/charts/raw/master'
 $ helm repo update
-$ helm search nodejs
-NAME                    CHART VERSION   APP VERSION     DESCRIPTION
-openshift/nodejs        0.1                             An example Node.js application with no database. For more...
+$ helm search auto-deploy-app
+NAME                            CHART VERSION   APP VERSION     DESCRIPTION
+openshift/auto-deploy-app       0.0.1                           GitLab's Auto-deploy Helm Chart (OpenShift)
 ```
