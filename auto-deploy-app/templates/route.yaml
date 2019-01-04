@@ -11,7 +11,7 @@ metadata:
   {{- $schema := .Values.service.url | trunc 6 -}}
   {{- if eq $schema "https:" }}
   annotations:
-    "kubernetes.io/tls-acme": true
+    kubernetes.io/tls-acme: "true"
   {{- end }}
 spec:
   host: {{ template "hostname" .Values.service.url }}
