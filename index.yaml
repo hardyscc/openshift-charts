@@ -2,27 +2,12 @@ apiVersion: v1
 entries:
   auto-deploy-app:
   - apiVersion: v1
-    created: 2019-01-02T17:04:41.291963+08:00
+    created: 2019-01-04T17:40:03.019618+08:00
     description: GitLab's Auto-deploy Helm Chart (OpenShift)
-    digest: 208360d6a6c2e083864785f3ba804c365632639046584e37c8eaaacc6ebf66e7
+    digest: 62498dd50099a01bdbd8a0f2c5dea0fd074e915ba6e1fc267b115b4c54e57407
     icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
     name: auto-deploy-app
     urls:
     - auto-deploy-app-0.0.1.tgz
     version: 0.0.1
-  nodejs:
-  - created: 2019-01-02T17:04:41.292288+08:00
-    description: An example Node.js application with no database. For more information
-      about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.
-    digest: 34e08db336b2f649a2761052fb58942eb159216545f271693603035003de4d53
-    home: https://access.redhat.com
-    keywords:
-    - quickstart
-    - nodejs
-    name: nodejs
-    sources:
-    - https://github.com/openshift/nodejs-ex
-    urls:
-    - nodejs-0.1.tgz
-    version: "0.1"
-generated: 2019-01-02T17:04:41.290811+08:00
+generated: 2019-01-04T17:40:03.018564+08:00
