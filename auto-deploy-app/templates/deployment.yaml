@@ -36,6 +36,10 @@ spec:
           value: {{ .Values.application.database_url | quote }}
         - name: REDIS_URL
           value: {{ .Values.application.redis_url | quote }}
+        {{- if .Values.service.server.enabled }}
+        - name: SERVER_URL
+          value: {{ template "hostname-server" .Values.service.url }}
+        {{- end }}
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.internalPort }}
