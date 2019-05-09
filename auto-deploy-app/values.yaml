@@ -21,8 +21,14 @@ service:
   url: http://my.host.com/
   externalPort: 5000
   internalPort: 5000
+  server:
+    enabled: false
+    externalPort: 4000
+    internalPort: 4000
 postgresql:
   enabled: true
+redis:
+  enabled: false
 resources:
 #  limits:
 #    cpu: 100m

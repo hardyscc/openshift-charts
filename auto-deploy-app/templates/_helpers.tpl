@@ -15,13 +15,28 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- printf "%s-%s" .Release.Name $name | trimSuffix "-app" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
+{{- define "fullname-server" -}}
+{{- $name := default .Chart.Name .Values.nameOverride -}}
+{{- printf "%s-server-%s" .Release.Name $name | trimSuffix "-app" | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+
 {{- define "appname" -}}
 {{- $releaseName := default .Release.Name .Values.releaseOverride -}}
 {{- printf "%s" $releaseName | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
+{{- define "appname-server" -}}
+{{- $releaseName := default .Release.Name .Values.releaseOverride -}}
+{{- printf "%s-server" $releaseName | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+
 {{- define "trackableappname" -}}
 {{- $trackableName := printf "%s-%s" (include "appname" .) .Values.application.track -}}
+{{- $trackableName | trimSuffix "-stable" | trunc 63 | trimSuffix "-" -}}
+{{- end -}}
+
+{{- define "trackableappname-server" -}}
+{{- $trackableName := printf "%s-server-%s" (include "appname" .) .Values.application.track -}}
 {{- $trackableName | trimSuffix "-stable" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 
@@ -30,4 +45,9 @@ Get a hostname from URL
 */}}
 {{- define "hostname" -}}
 {{- . | trimPrefix "http://" |  trimPrefix "https://" | trimSuffix "/" | quote -}}
+{{- end -}}
+
+{{- define "hostname-server" -}}
+{{- $hostname := . | trimPrefix "http://" |  trimPrefix "https://" | trimSuffix "/" -}}
+{{- printf "server-%s" $hostname | quote -}}
 {{- end -}}

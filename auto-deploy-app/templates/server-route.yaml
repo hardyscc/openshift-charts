@@ -1,0 +1,19 @@
+{{- if .Values.service.server.enabled -}}
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: {{ template "fullname-server" . }}
+  labels:
+    app: {{ template "appname-server" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version| replace "+" "_" }}"
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  host: {{ template "hostname-server" .Values.service.url }}
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge  
+  to:
+    kind: Service
+    name: {{ template "fullname-server" . }}
+{{- end -}}

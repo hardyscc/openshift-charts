@@ -1,10 +1,11 @@
+{{- if .Values.service.server.enabled -}}
 {{- if not .Values.application.initializeCommand -}}
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: {{ template "trackableappname" . }}
+  name: {{ template "trackableappname-server" . }}
   labels:
-    app: {{ template "appname" . }}
+    app: {{ template "appname-server" . }}
     track: "{{ .Values.application.track }}"
     tier: "{{ .Values.application.tier }}"
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
@@ -15,7 +16,7 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ template "appname" . }}
+        app: {{ template "appname-server" . }}
         track: "{{ .Values.application.track }}"
         tier: "{{ .Values.application.tier }}"
         release: {{ .Release.Name }}
@@ -38,19 +39,20 @@ spec:
           value: {{ .Values.application.redis_url | quote }}
         ports:
         - name: "{{ .Values.service.name }}"
-          containerPort: {{ .Values.service.internalPort }}
+          containerPort: {{ .Values.service.server.internalPort }}
         livenessProbe:
           httpGet:
             path: /
-            port: {{ .Values.service.internalPort }}
+            port: {{ .Values.service.server.internalPort }}
           initialDelaySeconds: 15
           timeoutSeconds: 15
         readinessProbe:
           httpGet:
             path: /
-            port: {{ .Values.service.internalPort }}
+            port: {{ .Values.service.server.internalPort }}
           initialDelaySeconds: 5
           timeoutSeconds: 3
         resources:
 {{ toYaml .Values.resources | indent 12 }}
+{{- end -}}
 {{- end -}}
