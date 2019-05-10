@@ -38,7 +38,7 @@ spec:
           value: {{ .Values.application.redis_url | quote }}
         {{- if .Values.service.server.enabled }}
         - name: SERVER_URL
-          value: {{ template "hostname-server" .Values.service.url }}
+          value: {{ .Values.service.server.url | quote }}
         {{- end }}
         ports:
         - name: "{{ .Values.service.name }}"

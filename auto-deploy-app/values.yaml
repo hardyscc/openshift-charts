@@ -23,6 +23,7 @@ service:
   internalPort: 5000
   server:
     enabled: false
+    url: http://server-my.host.com/
     externalPort: 4000
     internalPort: 4000
 postgresql:

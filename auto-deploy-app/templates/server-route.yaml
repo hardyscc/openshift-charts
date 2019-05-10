@@ -9,7 +9,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
-  host: {{ template "hostname-server" .Values.service.url }}
+  host: {{ template "hostname" .Values.service.server.url }}
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge  

@@ -37,6 +37,8 @@ spec:
           value: {{ .Values.application.database_url | quote }}
         - name: REDIS_URL
           value: {{ .Values.application.redis_url | quote }}
+        - name: SERVER_URL
+          value: {{ .Values.service.server.url | quote }}          
         ports:
         - name: "{{ .Values.service.name }}"
           containerPort: {{ .Values.service.server.internalPort }}
