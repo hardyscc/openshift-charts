@@ -7,3 +7,7 @@ dependencies:
     version: "7.1.0"
     repository: "https://kubernetes-charts.storage.googleapis.com/"
     condition: redis.enabled
+  - name: mssql
+    version: "0.0.1"
+    repository: "https://raw.githubusercontent.com/hardyscc/openshift-charts/master/"
+    condition: mssql.enabled

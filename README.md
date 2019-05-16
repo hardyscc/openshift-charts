@@ -23,7 +23,7 @@ $ git commit -m 'New chart version'
 You might know gitlab has a raw view. So simply use the following:
 
 ```bash
-$ helm repo add openshift 'http://gitlab.apps.sysforce.com/tommy/charts/raw/master'
+$ helm repo add openshift 'https://raw.githubusercontent.com/hardyscc/openshift-charts/master'
 $ helm repo update
 $ helm search auto-deploy-app
 NAME                            CHART VERSION   APP VERSION     DESCRIPTION
