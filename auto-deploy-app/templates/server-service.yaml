@@ -14,8 +14,8 @@ spec:
   - port: {{ .Values.service.server.externalPort }}
     targetPort: {{ .Values.service.server.internalPort }}
     protocol: TCP
-    name: {{ .Values.service.name }}
+    name: {{ .Values.service.server.name }}
   selector:
     app: {{ template "appname-server" . }}
-    tier: "{{ .Values.application.tier }}"
+    tier: "{{ .Values.application.server.tier }}"
 {{- end -}}

@@ -14,6 +14,8 @@ application:
   migrateCommand:
   initializeCommand:
   # secretName:
+  server:
+    tier: server
 service:
   enabled: true
   name: web
@@ -23,6 +25,7 @@ service:
   internalPort: 5000
   server:
     enabled: false
+    name: server
     url: http://server-my.host.com/
     externalPort: 4000
     internalPort: 4000

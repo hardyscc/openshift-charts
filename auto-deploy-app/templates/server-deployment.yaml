@@ -7,7 +7,7 @@ metadata:
   labels:
     app: {{ template "appname-server" . }}
     track: "{{ .Values.application.track }}"
-    tier: "{{ .Values.application.tier }}"
+    tier: "{{ .Values.application.server.tier }}"
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
@@ -18,7 +18,7 @@ spec:
       labels:
         app: {{ template "appname-server" . }}
         track: "{{ .Values.application.track }}"
-        tier: "{{ .Values.application.tier }}"
+        tier: "{{ .Values.application.server.tier }}"
         release: {{ .Release.Name }}
     spec:
       imagePullSecrets:
@@ -40,7 +40,7 @@ spec:
         - name: SERVER_URL
           value: {{ .Values.service.server.url | quote }}          
         ports:
-        - name: "{{ .Values.service.name }}"
+        - name: "{{ .Values.service.server.name }}"
           containerPort: {{ .Values.service.server.internalPort }}
         livenessProbe:
           httpGet:
