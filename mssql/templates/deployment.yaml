@@ -33,6 +33,9 @@ spec:
 {{ toYaml .Values.pod.annotations | indent 8 }}
 {{- end }}
     spec:
+      {{- if .Values.serviceAccount }}
+      serviceAccount: {{ .Values.serviceAccount }}
+      {{- end }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"

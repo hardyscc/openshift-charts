@@ -13,9 +13,11 @@ application:
   tier: web
   migrateCommand:
   initializeCommand:
+  serviceAccount:
   # secretName:
   server:
     tier: server
+    serviceAccount:
 service:
   enabled: true
   name: web

@@ -7,6 +7,6 @@ dependencies:
   version: 7.1.0
 - name: mssql
   repository: https://raw.githubusercontent.com/hardyscc/openshift-charts/master/
-  version: 0.0.1
-digest: sha256:9467e4122aa3cd5afc111b09f731a2d771887bcaff6399e8f79f1aabb9457ddf
-generated: 2019-05-16T11:39:52.08733+08:00
+  version: 0.0.2
+digest: sha256:8fb4547831f1e430698d3a12d0d0e65e4140266bb9bcf3aef360cb7855348e73
+generated: "2019-06-18T14:29:13.896659+08:00"

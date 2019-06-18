@@ -54,6 +54,7 @@ livenessprobe:
 readinessprobe:
   initialDelaySeconds: 5
   periodSeconds: 10
+serviceAccount:
 resources:
   limits:
     #  cpu: 100m

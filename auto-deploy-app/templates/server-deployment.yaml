@@ -21,6 +21,9 @@ spec:
         tier: "{{ .Values.application.server.tier }}"
         release: {{ .Release.Name }}
     spec:
+      {{- if .Values.application.server.serviceAccount }}
+      serviceAccount: {{ .Values.application.server.serviceAccount }}
+      {{- end }}    
       imagePullSecrets:
 {{ toYaml .Values.image.secrets | indent 10 }}    
       containers:
