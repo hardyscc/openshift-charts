@@ -10,13 +10,13 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   host: {{ template "hostname" .Values.service.url }}
+  port:
+    targetPort: {{ .Values.service.internalPort }}
   tls:
     insecureEdgeTerminationPolicy: Redirect
-    termination: edge  
+    termination: edge
   to:
     kind: Service
     name: {{ template "fullname" . }}
-    weight: {{ .Values.service.weight }}
-  wildcardPolicy: None
-status:
+    weight: 100
 {{- end -}}
