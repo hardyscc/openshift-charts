@@ -17,4 +17,6 @@ spec:
     kind: Service
     name: {{ template "fullname" . }}
     weight: {{ .Values.service.weight }}
+  wildcardPolicy: None
+status:
 {{- end -}}
