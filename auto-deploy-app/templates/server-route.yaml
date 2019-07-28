@@ -10,8 +10,6 @@ metadata:
     heritage: {{ .Release.Service }}
 spec:
   host: {{ template "hostname" .Values.service.server.url }}
-  port:
-    targetPort: {{ .Values.service.server.internalPort }}
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge  

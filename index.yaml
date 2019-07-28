@@ -2,27 +2,17 @@ apiVersion: v1
 entries:
   auto-deploy-app:
   - apiVersion: v1
-    created: "2019-07-28T17:43:30.91223+08:00"
+    created: "2019-07-28T21:14:11.903458+08:00"
     description: GitLab's Auto-deploy Helm Chart for OpenShift (gitlab/auto-deploy-app
       0.2.6)
-    digest: 0c9d3a988ce55974663d73efdc5c1cbd310642cbbac27d614b4555e162eecdb6
-    icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
-    name: auto-deploy-app
-    urls:
-    - auto-deploy-app-0.0.7.tgz
-    version: 0.0.7
-  - apiVersion: v1
-    created: "2019-07-28T17:43:30.909783+08:00"
-    description: GitLab's Auto-deploy Helm Chart for OpenShift (gitlab/auto-deploy-app
-      0.2.6)
-    digest: c01141cb53c3bf4c31b4eccba98f833e0c5440c5604138ebd54dc423140d740d
+    digest: c0d1dcc5b89f74bbb8cc75082079933bb4174b9bc68f73ef181f3dd3c211cfd9
     icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
     name: auto-deploy-app
     urls:
     - auto-deploy-app-0.0.6.tgz
     version: 0.0.6
   - apiVersion: v1
-    created: "2019-07-28T17:43:30.906416+08:00"
+    created: "2019-07-28T21:14:11.900364+08:00"
     description: GitLab's Auto-deploy Helm Chart for OpenShift (gitlab/auto-deploy-app
       0.2.6)
     digest: 6df7446ea92134c952c3d57a5d33f41675d46b4cb03848639a0d325e79366d52
@@ -32,7 +22,7 @@ entries:
     - auto-deploy-app-0.0.5.tgz
     version: 0.0.5
   - apiVersion: v1
-    created: "2019-07-28T17:43:30.903852+08:00"
+    created: "2019-07-28T21:14:11.897828+08:00"
     description: GitLab's Auto-deploy Helm Chart for OpenShift (gitlab/auto-deploy-app
       0.2.6)
     digest: 1a6c0e71c98ba21baf696ae9adbbf1bbae9de4c0be13eb3798c8b47417e0c975
@@ -42,7 +32,7 @@ entries:
     - auto-deploy-app-0.0.4.tgz
     version: 0.0.4
   - apiVersion: v1
-    created: "2019-07-28T17:43:30.900697+08:00"
+    created: "2019-07-28T21:14:11.894598+08:00"
     description: GitLab's Auto-deploy Helm Chart (OpenShift)
     digest: 60a8d5133d2f74f576c02256af0df0cdf7f47ac209934b65233f80a55c276ccb
     icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
@@ -51,7 +41,7 @@ entries:
     - auto-deploy-app-0.0.3.tgz
     version: 0.0.3
   - apiVersion: v1
-    created: "2019-07-28T17:43:30.89826+08:00"
+    created: "2019-07-28T21:14:11.891984+08:00"
     description: GitLab's Auto-deploy Helm Chart (OpenShift)
     digest: 39e6719b4c5c16159c7009edfba04249e46d1eaa2bf02904686871abefc6bd9c
     icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
@@ -60,7 +50,7 @@ entries:
     - auto-deploy-app-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v1
-    created: "2019-07-28T17:43:30.895348+08:00"
+    created: "2019-07-28T21:14:11.888089+08:00"
     description: GitLab's Auto-deploy Helm Chart (OpenShift)
     digest: 3f5ae4a1ab3180464b0261243d3f6bf4863e690a7846bca08b6c6cdaeaa221e4
     icon: https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/logo/logo-square.png
@@ -71,7 +61,7 @@ entries:
   mssql:
   - apiVersion: v1
     appVersion: 14.0.3045.24
-    created: "2019-07-28T17:43:30.913043+08:00"
+    created: "2019-07-28T21:14:11.904844+08:00"
     description: SQL Server Helm Chart (stable/mssql-linux 0.7.0/14.0.3023.8)
     digest: 9832ca9deef542a1ca82973238032518944c3f57c92af4ad2afb5f28c9d1c0e3
     home: https://hub.docker.com/r/mcmoe/mssqldocker
@@ -84,7 +74,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: 14.0.3045.24
-    created: "2019-07-28T17:43:30.912645+08:00"
+    created: "2019-07-28T21:14:11.904267+08:00"
     description: SQL Server Helm Chart (stable/mssql-linux 0.7.0/14.0.3023.8)
     digest: 562809c057d34029b3cee6f515844ce1910f3a030229416f35944c81f4dbefe5
     home: https://hub.docker.com/r/mcmoe/mssqldocker
@@ -95,4 +85,4 @@ entries:
     urls:
     - mssql-0.0.1.tgz
     version: 0.0.1
-generated: "2019-07-28T17:43:30.89444+08:00"
+generated: "2019-07-28T21:14:11.886955+08:00"
