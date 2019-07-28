@@ -23,12 +23,14 @@ service:
   name: web
   type: ClusterIP
   url: http://my.host.com/
+  weight: 100
   externalPort: 5000
   internalPort: 5000
   server:
     enabled: false
     name: server
     url: http://server-my.host.com/
+    weight: 100
     externalPort: 4000
     internalPort: 4000
 postgresql:

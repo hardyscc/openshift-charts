@@ -16,4 +16,5 @@ spec:
   to:
     kind: Service
     name: {{ template "fullname" . }}
+    weight: {{ .Values.service.weight }}
 {{- end -}}
