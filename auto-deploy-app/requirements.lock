@@ -1,12 +1,12 @@
 dependencies:
 - name: postgresql
   repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 3.18.4
+  version: 0.7.1
 - name: redis
   repository: https://kubernetes-charts.storage.googleapis.com/
   version: 7.1.0
 - name: mssql
   repository: https://raw.githubusercontent.com/hardyscc/openshift-charts/master/
   version: 0.0.2
-digest: sha256:8fb4547831f1e430698d3a12d0d0e65e4140266bb9bcf3aef360cb7855348e73
-generated: "2019-06-18T14:29:13.896659+08:00"
+digest: sha256:52ff40c9f0dfccbe349b6812ee041f555ad488d2d3f6a177f9f3c127b00ef20e
+generated: "2019-07-29T14:35:39.75354+08:00"
